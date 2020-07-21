@@ -15,7 +15,7 @@ interface Interface1{
     void operation5();
 }
 
-class B implements cn.xinghaibay.principle.segregation.improve.Interface1 {
+class B implements Interface1 {
 
     @Override
     public void operation1() {
@@ -43,7 +43,7 @@ class B implements cn.xinghaibay.principle.segregation.improve.Interface1 {
     }
 }
 
-class D implements cn.xinghaibay.principle.segregation.improve.Interface1 {
+class D implements Interface1 {
 
     @Override
     public void operation1() {
@@ -76,15 +76,15 @@ class D implements cn.xinghaibay.principle.segregation.improve.Interface1 {
  */
 class A{
 
-    public void fun1(cn.xinghaibay.principle.segregation.improve.Interface1 interface1){
+    public void fun1(Interface1 interface1){
         interface1.operation1();
     }
 
-    public void fun2(cn.xinghaibay.principle.segregation.improve.Interface1 interface1){
+    public void fun2(Interface1 interface1){
         interface1.operation2();
     }
 
-    public void fun3(cn.xinghaibay.principle.segregation.improve.Interface1 interface1){
+    public void fun3(Interface1 interface1){
         interface1.operation3();
     }
 }
@@ -94,15 +94,15 @@ class A{
  */
 class C{
 
-    public void fun1(cn.xinghaibay.principle.segregation.improve.Interface1 interface1){
+    public void fun1(Interface1 interface1){
         interface1.operation1();
     }
 
-    public void fun4(cn.xinghaibay.principle.segregation.improve.Interface1 interface1){
+    public void fun4(Interface1 interface1){
         interface1.operation4();
     }
 
-    public void fun5(cn.xinghaibay.principle.segregation.improve.Interface1 interface1){
+    public void fun5(Interface1 interface1){
         interface1.operation5();
     }
 }
